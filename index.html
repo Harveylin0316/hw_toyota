@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      width: 900px;
+    }
+
+    .wrap {
+      position: relative;
+      margin: auto;
+      margin-top: 100px;
+      z-index: 1;
+      height: 680px;
+    }
+
+    .intro-above {
+      width: 300px;
+      height: 200px;
+      color: white;
+      background-color: red;
+      left: -130px;
+      top: -38px;
+      z-index: 1;
+    }
+
+    .intro-above .detail-intro {
+      padding: 10px;
+      background-color: black;
+      color: white;
+    }
+    .intro-h2 {
+      text-align: center;
+    }
+    .intro-below-pic {
+      position: absolute;
+      box-sizing: border-box;
+      width: 600px;
+      padding: 10px;
+      background-color: rgb(235, 232, 232);
+      bottom: 0;
+      left: 20px;
+      z-index: 1;
+    }
+    .intro-below-pic > span {
+      color: brown;
+      font-weight: bold;
+    }
+
+    .intro-below-pic .list-span {
+      display: block;
+      background-color: black;
+      color: white;
+      text-align: center;
+      width: 100px;
+      margin-left: -40px;
+    }
+    .intro-below-pic ul li {
+      margin: 5px;
+    }
+
+    .pic img {
+      width: 100%;
+    }
+
+    .grey-area {
+      width: 400px;
+      height: 300px;
+      margin-top: 30px;
+      margin-left: 150px;
+
+      background-color: rgba(226, 223, 223, 0.555);
+    }
+
+    .top-blocks {
+      width: 800px;
+      box-sizing: border-box;
+      margin: 100px;
+
+      display: flex;
+      z-index: 1;
+    }
+
+    .pic {
+      position: absolute;
+      left: 50px;
+      top: 74px;
+      width: 800px;
+      /* z-index:  */
+      display: flex;
+    }
+
+    .play-button-outer {
+      position: absolute;
+      right: -20px;
+      margin: 25% auto;
+      width: 6em;
+      height: 4em;
+      background-color: rgb(145, 26, 26);
+      cursor: pointer;
+    }
+
+    .play-button {
+      margin: 0 auto;
+      top: 25%;
+      position: relative;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 1em 0 1em 2em;
+      border-color: transparent transparent transparent white;
+    }
+  </style>
+  <body>
+    <!-- 容器 -->
+    <div class="container">
+      <div class="wrap">
+        <!-- 左上角說明 -->
+        <div class="top-blocks">
+          <div class="intro-above">
+            <div class="intro-h2"><h2>01 操控樂趣</h2></div>
+            <div class="detail-intro">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>
+                透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+              </p>
+            </div>
+          </div>
+          <!-- 右上角說明 -->
+          <div class="grey-area"></div>
+        </div>
+
+        <!-- 下面介紹 -->
+        <div class="intro-below-pic">
+          <span>因為我們做了這些革新 ─────────────────────────</span>
+          <ul>
+            <span class="list-span">低重心設計</span>
+            <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾。</li>
+            <span class="list-span">車體剛性強化</span>
+            <li>車身結構採用超高強度鋼材，提高車輛穩定性xxxxxxxx</li>
+            <span class="list-span">四輪獨立懸吊</span>
+            <li>
+              貼圖完全管理豐原醫生困難賺錢，出版社加速對付取消麻煩擔任不明白開關註冊有個習慣，豐原聯繫方式，加工。
+            </li>
+          </ul>
+        </div>
+        <!-- 圖片 -->
+        <div class="pic">
+          <img src="/toyota_pic1.jpeg" />
+          <div class="play-button-outer"><div class="play-button"></div></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <!-- 左上角說明 -->
+        <div class="top-blocks">
+          <div class="intro-above">
+            <div class="intro-h2"><h2>01 操控樂趣</h2></div>
+            <div class="detail-intro">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>
+                透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+              </p>
+            </div>
+          </div>
+          <!-- 右上角說明 -->
+          <div class="grey-area"></div>
+        </div>
+
+        <!-- 下面介紹 -->
+        <div class="intro-below-pic">
+          <span>因為我們做了這些革新 ─────────────────────────</span>
+          <ul>
+            <span class="list-span">低重心設計</span>
+            <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾。</li>
+            <span class="list-span">車體剛性強化</span>
+            <li>車身結構採用超高強度鋼材，提高車輛穩定性xxxxxxxx</li>
+            <span class="list-span">四輪獨立懸吊</span>
+            <li>
+              貼圖完全管理豐原醫生困難賺錢，出版社加速對付取消麻煩擔任不明白開關註冊有個習慣，豐原聯繫方式，加工。
+            </li>
+          </ul>
+        </div>
+        <!-- 圖片 -->
+        <div class="pic">
+          <img src="/toyota_pic1.jpeg" />
+          <div class="play-button-outer"><div class="play-button"></div></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <!-- 左上角說明 -->
+        <div class="top-blocks">
+          <div class="intro-above">
+            <div class="intro-h2"><h2>01 操控樂趣</h2></div>
+            <div class="detail-intro">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>
+                透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+              </p>
+            </div>
+          </div>
+          <!-- 右上角說明 -->
+          <div class="grey-area"></div>
+        </div>
+
+        <!-- 下面介紹 -->
+        <div class="intro-below-pic">
+          <span>因為我們做了這些革新 ─────────────────────────</span>
+          <ul>
+            <span class="list-span">低重心設計</span>
+            <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾。</li>
+            <span class="list-span">車體剛性強化</span>
+            <li>車身結構採用超高強度鋼材，提高車輛穩定性xxxxxxxx</li>
+            <span class="list-span">四輪獨立懸吊</span>
+            <li>
+              貼圖完全管理豐原醫生困難賺錢，出版社加速對付取消麻煩擔任不明白開關註冊有個習慣，豐原聯繫方式，加工。
+            </li>
+          </ul>
+        </div>
+        <!-- 圖片 -->
+        <div class="pic">
+          <img src="/toyota_pic1.jpeg" />
+          <div class="play-button-outer"><div class="play-button"></div></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <!-- 左上角說明 -->
+        <div class="top-blocks">
+          <div class="intro-above">
+            <div class="intro-h2"><h2>01 操控樂趣</h2></div>
+            <div class="detail-intro">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>
+                透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+              </p>
+            </div>
+          </div>
+          <!-- 右上角說明 -->
+          <div class="grey-area"></div>
+        </div>
+
+        <!-- 下面介紹 -->
+        <div class="intro-below-pic">
+          <span>因為我們做了這些革新 ─────────────────────────</span>
+          <ul>
+            <span class="list-span">低重心設計</span>
+            <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾。</li>
+            <span class="list-span">車體剛性強化</span>
+            <li>車身結構採用超高強度鋼材，提高車輛穩定性xxxxxxxx</li>
+            <span class="list-span">四輪獨立懸吊</span>
+            <li>
+              貼圖完全管理豐原醫生困難賺錢，出版社加速對付取消麻煩擔任不明白開關註冊有個習慣，豐原聯繫方式，加工。
+            </li>
+          </ul>
+        </div>
+        <!-- 圖片 -->
+        <div class="pic">
+          <img src="/toyota_pic1.jpeg" />
+          <div class="play-button-outer"><div class="play-button"></div></div>
+        </div>
+      </div>
+      <div class="wrap">
+        <!-- 左上角說明 -->
+        <div class="top-blocks">
+          <div class="intro-above">
+            <div class="intro-h2"><h2>01 操控樂趣</h2></div>
+            <div class="detail-intro">
+              <h3>人人滿意的駕駛體驗</h3>
+              <p>
+                透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。
+              </p>
+            </div>
+          </div>
+          <!-- 右上角說明 -->
+          <div class="grey-area"></div>
+        </div>
+
+        <!-- 下面介紹 -->
+        <div class="intro-below-pic">
+          <span>因為我們做了這些革新 ─────────────────────────</span>
+          <ul>
+            <span class="list-span">低重心設計</span>
+            <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾。</li>
+            <span class="list-span">車體剛性強化</span>
+            <li>車身結構採用超高強度鋼材，提高車輛穩定性xxxxxxxx</li>
+            <span class="list-span">四輪獨立懸吊</span>
+            <li>
+              貼圖完全管理豐原醫生困難賺錢，出版社加速對付取消麻煩擔任不明白開關註冊有個習慣，豐原聯繫方式，加工。
+            </li>
+          </ul>
+        </div>
+        <!-- 圖片 -->
+        <div class="pic">
+          <img src="/toyota_pic1.jpeg" />
+          <div class="play-button-outer"><div class="play-button"></div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
